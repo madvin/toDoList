@@ -10,9 +10,15 @@ function App() {
 		"Build a To-Do App",
 		"Master JavaScript"
 	])
+
+	function handleAddTodos(newTodo) {
+		const newTodoList = [...todos, newTodo]
+		setTodos(newTodoList)
+	}
+
 	return (
 		<>
-			<TodoInput />
+			<TodoInput handleAddTodos={handleAddTodos}/>
 			<TodoList todos={todos}/>
 		</>
 	)
