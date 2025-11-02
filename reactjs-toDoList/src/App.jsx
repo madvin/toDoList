@@ -3,7 +3,11 @@ import TodoInput from "./components/TodoInput"
 
 function App() {
 
-	const [todos, setTodos] = useState([])
+	const [todos, setTodos] = useState([
+		"Learn React",
+		"Build a To-Do App",
+		"Master JavaScript"
+	])
 	return (
 		<>
 			<TodoInput />
