@@ -12,6 +12,7 @@ export default function TodoInput(props) {
         }} placeholder="Add a new task..." />
         <button onClick={() => {
             handleAddTodos(todoValue)
+            setTodoValue('')
         }}>Add</button>
      </header>
   );
