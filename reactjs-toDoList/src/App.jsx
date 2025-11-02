@@ -5,9 +5,10 @@ import TodoCard from "./components/TodoCard"
 function App() {
 
   return (
-    <>
-     <div><TodoList/></div>
-    </>
+    <main>
+      <TodoInput />
+      <TodoList />
+    </main>
   )
 }
 

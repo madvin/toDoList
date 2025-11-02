@@ -1,5 +1,8 @@
 export default function TodoInput() {
   return (
-    <> TodoInput</>
+    <header>
+        <input type="text" placeholder="Add a new task..." />
+        <button>Add</button>
+     </header>
   );
 }
